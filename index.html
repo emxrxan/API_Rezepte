@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipes and Food</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+
+    <body>
+
+        <header>
+            <h2>Recipes and Foods</h2>
+        </header>
+
+        <section class="section">
+            <h1>Recipes and Foods</h1>
+            <p>
+                You can find a lot of cool recipes here.
+                First, choose what you want to cook.
+                A list of recipes will then open, from which you can show one.
+                Bon appetit
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="recept_container">
+                <img src="./src/img/pasta.jpg" alt="Bild von einer Pasta" title="Hmm. Lecker">
+                <span class="recipes_name">Pasta</span>
+            </div>
+
+            <div class="recept_container">
+                <img src="./src/img/pizza.png" alt="Bild von einer Pizza" title="Hmm. Lecker">
+                <span class="recipes_name">Pizza</span>
+            </div>
+    
+            <div class="recept_container">
+                <img src="./src/img/blueberries.jpg" alt="Bild von einem Shake" title="Hmm. Lecker">
+                <span class="recipes_name">Shake</span>
+            </div>
+        </section>
+
+        <section class="section" id="auswahl_section">
+            <div id="auswahl_innercontainer"></div>
+        </section>
+
+        <section class="section">
+            <div class="instuction"></div>
+        </section>
+
+        <section class="section">
+            <table id="table">
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <script src="./src/js/Rezept.js" defer></script>
+        <script src="./src/js/main.js" defer></script>
+
+    </body>
+
+</html>

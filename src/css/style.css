@@ -1,0 +1,207 @@
+/* === Fonts === */
+
+@font-face {
+    font-family: caption;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Socake.ttf) format(truetype);
+}
+
+/* === Fonts === */
+
+
+/* === Generlles === */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h2{
+    font-family: caption, Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+}
+
+.recept_container{
+    width: 300px;
+    height: 220px;
+    border: 1.5px solid #000;
+    border-radius: 1rem;
+    position: relative;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.recept_container:hover{
+    cursor: pointer;
+}
+
+
+.section:nth-child(3) .recept_container{
+    height: 180px;
+    overflow: hidden;
+}
+
+
+.recept_container > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.recept_container:hover > img{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.recept_container > .recipes_name{
+    background-color: #a5ff7c;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.3rem;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-weight: bold;
+}
+
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* === Generlles === */
+
+/* === Header === */
+
+header{
+    background-color: #a5ff7c;
+    padding: 1rem;
+    border-bottom: 2px solid #000;
+}
+
+/* === Header === */
+
+/* === Intro === */
+
+.section:nth-child(2){
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.section:nth-child(2) > p{
+    margin: 1rem;
+}
+
+/* === Intro === */
+
+/* === Recepies === */
+
+.section:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* === Recepies === */
+
+/* === Recepies_auswahl === */
+
+#auswahl_section{
+    background-color: #a5ff7c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#auswahl_innercontainer{
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+/* === Recepies_auswahl === */
+
+/* === Instuctions === */
+
+.section:nth-child(5){
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instuction > .instuction_element{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.instuction > .instuction_element > .number{
+    background-color: #a5ff7c;
+    width: 50px;
+    height: 50px;
+    padding: 0.8rem;
+    text-align: center;
+    margin-right: 1rem;
+    border: #000 2px solid;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* === Instuctions === */
+
+/* === Tabelle === */
+
+.section:nth-child(6){
+    background-color: #a5ff7c;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#table{
+    margin: 0 auto;
+    background-color: #fff;
+    width: 70%;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+#table tr{
+    border-bottom: 2px solid #000;
+}
+
+#table tr:last-child{
+    border: none;
+    font-size: 1.1rem;
+}
+
+#table tr:first-child{
+    font-size: 1.1rem;
+}
+
+#table td{
+    text-align: center;
+    padding: 0.2rem;
+}
+
+/* === Tabelle === */
