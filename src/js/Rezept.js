@@ -95,13 +95,9 @@ class Rezept{
      * Zeigt die Tablle für das jewilige Rezept an
      */
     zeig_tabelle = async function(id){
-        try{
-            const response = await fetch(`https://api.spoonacular.com/recipes/${id}/priceBreakdownWidget.json?apiKey=${this.apiKey}`);
-            const data = await response.json();
-            this.html_tabelle_generieren(data);
-        }catch{error}{
-            alert("I am Sorry. Server connection failed.");
-        }
+        const response = await fetch(`https://api.spoonacular.com/recipes/${id}/priceBreakdownWidget.json?apiKey=${this.apiKey}`);
+        const data = await response.json();
+        this.html_tabelle_generieren(data);
     }
 
     /**
