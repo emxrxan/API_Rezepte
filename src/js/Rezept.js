@@ -131,7 +131,6 @@ class Rezept{
      */
     html_generieren = function(alle_rezepte){
         document.querySelectorAll("#auswahl_innercontainer > .recept_container").forEach((element)=>element.remove());
-        console.log(alle_rezepte);
         alle_rezepte.results.forEach(element=>{
             document.querySelector("#auswahl_innercontainer").insertAdjacentHTML("beforeend",
                 `
