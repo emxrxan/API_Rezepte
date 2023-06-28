@@ -2,8 +2,12 @@
 
 class Rezept{
 
-    constructor(){
-        this.apiKey = 'bd93160d461b4b78a750806e002f70a3';
+    option(data_value){
+        return{
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({value: data_value})
+        }
     }
 
     /**
@@ -95,7 +99,7 @@ class Rezept{
      * Zeigt die Tablle für das jewilige Rezept an
      */
     zeig_tabelle = async function(id){
-        const response = await fetch(`https://api.spoonacular.com/recipes/${id}/priceBreakdownWidget.json?apiKey=${this.apiKey}`);
+        const response = await fetch('/api/rezept_tabelle', this.option(id));
         const data = await response.json();
         this.html_tabelle_generieren(data);
     }
@@ -107,7 +111,7 @@ class Rezept{
      */
     zeig_rezept_auswahl = async function(rezept_id){
         try{
-            const response = await fetch(`https://api.spoonacular.com/recipes/${rezept_id}/information?apiKey=${this.apiKey}`);
+            const response = await fetch('/api/rezept_instuction', this.option(rezept_id));
             const data = await response.json();
             this.instruction(data.analyzedInstructions);
             this.zeig_tabelle(data.id);
@@ -145,7 +149,7 @@ class Rezept{
 
     zeig_rezepte = async function(data){
         try{
-            const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${this.apiKey}&query=${data}`);
+            const response = await fetch('/rezeptart', this.option(data));
             const alle_rezepte = await response.json();
             this.html_generieren(alle_rezepte);
             this.rezept_auswahl(alle_rezepte);
