@@ -1,4 +1,4 @@
-<h1 align="center">API_Food</h1>
+<h1 align="center">API_Rezept</h1>
 
 <h3>About</h3>
 <p align="left">
