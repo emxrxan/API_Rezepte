@@ -3,7 +3,7 @@
 <h3>About</h3>
 <p align="left">
   Dieses Projekt gibt die Unterlagen eines Rezeptes an, was benötigt wird und wie dieses Rezept zubereitet wird. Gearbeitet wurde mit <a     
-  href="https://spoonacular.com/">Spoonacular</a>.
+  href="https://spoonacular.com/">Spoonacular</a>. Dieses Projekt enthält einen API-Schlüssel. Dieser wurder mit NODE.JS in einer .env-file gespeichert, um den API-Schlüssel zu schützen.
 </p>
 
 <h3 align="left">Gearbeitet mit folgenden Programmiersprachen:</h3>
