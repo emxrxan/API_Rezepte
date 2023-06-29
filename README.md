@@ -2,8 +2,8 @@
 
 <h3>About</h3>
 <p align="left">
-  Dieses Projekt zeigt die Daten eines Landes an. Wie zum Beispiel wie viele Einwohne oder wie groß das Land ist usw. . Gearbeitet wurde mit <a     
-  href="https://spoonacular.com/">Spoonacular</a>
+  Dieses Projekt gibt die Unterlagen eines Rezeptes an, was benötigt wird und wie dieses Rezept zubereitet wird. Gearbeitet wurde mit <a     
+  href="https://spoonacular.com/">Spoonacular</a>.
 </p>
 
 <h3 align="left">Gearbeitet mit folgenden Programmiersprachen:</h3>
